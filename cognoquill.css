@@ -641,3 +641,229 @@ font-size:18px;
 background:#4d1f16;
 
 }
+
+/* ===========================
+CATEGORY HEADER
+=========================== */
+
+.category-header{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+.category-header h1{
+
+    font-size:2rem;
+
+    letter-spacing:10px;
+
+    color:#6B2D20;
+
+    margin-bottom:15px;
+
+}
+
+.back-home{
+
+    text-decoration:none;
+
+    color:#6B2D20;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.back-home:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+PAGE TITLE
+=========================== */
+
+.page-title{
+
+    text-align:center;
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    color:#4E342E;
+
+}
+
+.paper{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+    background:#F8EBD7;
+
+    padding:60px 40px;
+
+    border-radius:18px;
+
+}
+
+.description{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    font-size:1.2rem;
+
+}
+
+/* ===========================
+CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+
+}
+
+.submit-card,
+
+.work-card{
+
+    background:white;
+
+    border:3px solid #6B2D20;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    min-height:420px;
+
+    transition:.3s;
+
+}
+
+.submit-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+.submit-card:hover,
+
+.work-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+.submit-card span{
+
+    font-size:6rem;
+
+    color:#6B2D20;
+
+}
+
+.submit-card h3{
+
+    margin-top:20px;
+
+}
+
+.submit-card p{
+
+    padding:0 25px;
+
+    text-align:center;
+
+}
+
+.work-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.work-content{
+
+    padding:25px;
+
+}
+
+.work-content h3{
+
+    margin-bottom:12px;
+
+}
+
+.work-content p{
+
+    color:#6B4E3D;
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.page-title{
+
+font-size:2.7rem;
+
+}
+
+.paper{
+
+padding:35px 20px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.submit-card,
+
+.work-card{
+
+min-height:380px;
+
+}
+
+}
