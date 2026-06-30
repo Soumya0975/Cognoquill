@@ -425,130 +425,105 @@ font-size:.9rem;
 }
 
 }
-
 /* =======================
-CATEGORY PAGE
+   CATEGORY PAGE
 ======================= */
 
 .category-header{
 
-padding:50px 20px 20px;
+    padding:50px 20px 20px;
 
-text-align:center;
+    text-align:center;
 
 }
 
 .category-header h1{
 
-font-size:4rem;
+    font-size:4rem;
 
-letter-spacing:5px;
+    letter-spacing:5px;
 
-color:#4E342E;
+    color:#4E342E;
 
 }
 
 .paper{
 
-width:min(1200px,95%);
+    width:min(1200px,95%);
 
-margin:auto;
+    margin:40px auto;
 
-padding:50px;
+    padding:60px 40px;
 
-background:#F8EBD7;
+    background:#F8EBD7;
 
-border-radius:12px;
+    border-radius:12px;
 
 }
 
 .description{
 
-text-align:center;
+    text-align:center;
 
-font-size:1.2rem;
+    font-size:1.2rem;
 
-margin-bottom:50px;
+    color:#6B4E3D;
 
-color:#6B4E3D;
+    max-width:700px;
+
+    margin:0 auto 50px;
 
 }
 
 .cards{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-gap:50px;
-
-flex-wrap:wrap;
+    align-items:center;
 
 }
 
-.submit-card,
+.submit-card{
 
-.work-card{
+    width:240px;
 
-width:260px;
+    height:390px;
 
-height:430px;
+    background:white;
 
-background:white;
+    border:3px solid #6B2D20;
 
-border:4px solid #6B2D20;
+    border-radius:35px;
 
-border-radius:40px;
+    display:flex;
 
-display:flex;
+    justify-content:center;
 
-flex-direction:column;
+    align-items:center;
 
-justify-content:center;
+    cursor:pointer;
 
-align-items:center;
-
-cursor:pointer;
-
-transition:.3s;
+    transition:.3s;
 
 }
 
-.submit-card:hover,
+.submit-card:hover{
 
-.work-card:hover{
+    transform:translateY(-8px);
 
-transform:translateY(-8px);
-
-box-shadow:0 15px 30px rgba(0,0,0,.18);
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
 
 }
 
 .submit-card span{
 
-font-size:7rem;
+    font-size:7rem;
 
-font-weight:200;
+    color:#6B2D20;
 
-color:#6B2D20;
-
-}
-
-.work-card h3{
-
-margin-bottom:15px;
-
-font-size:1.5rem;
-
-color:#5C4033;
-
-}
-
-.work-card p{
-
-text-align:center;
-
-padding:0 20px;
+    font-weight:200;
 
 }
 
