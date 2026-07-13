@@ -420,3 +420,419 @@ font-size:1.05rem;
 }
 
 }
+/* ===========================================
+   POETRY PAGE — TWO COLUMN CONTENT LAYOUT
+=========================================== */
+
+.paper{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:60px auto;
+
+}
+
+.page-title{
+
+    font-size:2.6rem;
+
+    color:#4E342E;
+
+    text-align:center;
+
+    letter-spacing:4px;
+
+}
+
+.description{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:18px auto 50px;
+
+    font-size:1.2rem;
+
+    color:#5C4636;
+
+}
+
+.poetry-layout{
+
+    display:grid;
+
+    grid-template-columns:35% 65%;
+
+    gap:40px;
+
+    align-items:stretch;
+
+}
+
+/* ===========================================
+   LEFT COLUMN — SUBMIT CARD
+=========================================== */
+
+.submit-column{
+
+    display:flex;
+
+}
+
+.submit-card{
+
+    flex:1;
+
+    background:#FBF3E7;
+
+    border:1px solid #D8C3A5;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(62,39,35,.15);
+
+    padding:50px 30px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    transition:.35s ease;
+
+    background-image:
+
+        radial-gradient(circle at top left, rgba(113,84,62,.06), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(113,84,62,.06), transparent 60%);
+
+}
+
+.submit-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 22px 40px rgba(62,39,35,.25);
+
+    border-color:#B08B63;
+
+}
+
+.submit-card span{
+
+    font-size:4rem;
+
+    line-height:1;
+
+    color:#71543E;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.submit-card:hover span{
+
+    transform:rotate(90deg) scale(1.1);
+
+    color:#4E342E;
+
+}
+
+.submit-card h3{
+
+    font-size:1.8rem;
+
+    color:#4E342E;
+
+    letter-spacing:1px;
+
+}
+
+.submit-card p{
+
+    font-size:1.05rem;
+
+    color:#6B5645;
+
+    max-width:280px;
+
+}
+
+/* ===========================================
+   RIGHT COLUMN — CAROUSEL
+=========================================== */
+
+.carousel-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.poem-carousel{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    flex:1;
+
+    min-height:420px;
+
+    background:#EFE2D0;
+
+    box-shadow:inset 0 0 0 1px rgba(113,84,62,.12);
+
+}
+
+.carousel-track{
+
+    display:flex;
+
+    height:100%;
+
+    transition:transform .6s cubic-bezier(.65,0,.35,1);
+
+}
+
+.poem-card{
+
+    min-width:100%;
+
+    box-sizing:border-box;
+
+    display:flex;
+
+    gap:28px;
+
+    padding:30px;
+
+    background:#FBF3E7;
+
+    align-items:center;
+
+}
+
+.poem-card img{
+
+    width:42%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+    flex-shrink:0;
+
+    transition:.35s;
+
+}
+
+.poem-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.poem-card-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.poem-card-info h3{
+
+    font-size:1.9rem;
+
+    color:#4E342E;
+
+}
+
+.poem-card-info .poem-author{
+
+    font-size:1.05rem;
+
+    color:#8A6F55;
+
+    font-style:italic;
+
+}
+
+.poem-card-info .poem-preview{
+
+    font-size:1.1rem;
+
+    color:#5C4636;
+
+    line-height:1.6;
+
+}
+
+.read-more-btn{
+
+    align-self:flex-start;
+
+    margin-top:8px;
+
+    padding:10px 26px;
+
+    background:#71543E;
+
+    color:white;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:1.05rem;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.read-more-btn:hover{
+
+    background:#4E342E;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+
+}
+
+/* ===========================================
+   CAROUSEL DOTS
+=========================================== */
+
+.carousel-dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:22px;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#D8C3A5;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.dot.active{
+
+    background:#71543E;
+
+    transform:scale(1.25);
+
+}
+
+/* ===========================================
+   POETRY LAYOUT — TABLET
+=========================================== */
+
+@media(max-width:1024px){
+
+.poetry-layout{
+
+grid-template-columns:40% 60%;
+
+}
+
+.poem-card img{
+
+height:260px;
+
+}
+
+}
+
+/* ===========================================
+   POETRY LAYOUT — MOBILE
+=========================================== */
+
+@media(max-width:768px){
+
+.poetry-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.poem-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.poem-card img{
+
+width:100%;
+
+height:220px;
+
+}
+
+.poem-card-info{
+
+align-items:center;
+
+}
+
+.read-more-btn{
+
+align-self:center;
+
+}
+
+.poem-carousel{
+
+min-height:auto;
+
+}
+
+}
