@@ -14,37 +14,50 @@
 </header>
 
 <section class="paper">
+
     <h2 class="page-title">POETRY</h2>
+
     <p class="description">
         Every poem begins with a feeling. Share yours or discover beautiful words written by others.
     </p>
 
-    <div class="cards">
-        <!-- SUBMIT CARD -->
-        <div class="submit-card">
-            <span>+</span>
-            <h3>Share Your Work</h3>
-            <p>Click to submit your poem.</p>
+    <!-- ===========================
+         POETRY CONTENT LAYOUT
+         (Two Column: Submit Card + Carousel)
+    ============================ -->
+
+    <div class="poetry-layout">
+
+        <!-- LEFT COLUMN: SUBMIT CARD -->
+        <div class="submit-column">
+
+            <div class="submit-card">
+                <span>+</span>
+                <h3>Share Your Work</h3>
+                <p>Click to submit your poem and let the world read your words.</p>
+            </div>
+
         </div>
 
-        <!-- SAMPLE CARD -->
-        <div class="work-card">
-            <img src="placeholder.jpg" alt="Poem">
-            <div class="work-content">
-                <h3>No submissions yet</h3>
-                <p>Be the first poet on Cognoquill.</p>
+        <!-- RIGHT COLUMN: CAROUSEL -->
+        <div class="carousel-column">
+
+            <div class="poem-carousel" id="poemCarousel">
+
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Cards injected here by JS -->
+                </div>
+
             </div>
+
+            <div class="carousel-dots" id="carouselDots">
+                <!-- Dots injected here by JS -->
+            </div>
+
         </div>
 
-        <!-- SAMPLE CARD -->
-        <div class="work-card">
-            <img src="placeholder.jpg" alt="Poem">
-            <div class="work-content">
-                <h3>No submissions yet</h3>
-                <p>Your poem could be here.</p>
-            </div>
-        </div>
     </div>
+
 </section>
 
 <!-- ===========================
