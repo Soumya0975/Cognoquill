@@ -35,7 +35,7 @@ body{
 
     background:
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("images/hero.jpg") center center/cover no-repeat;
+    url("hero.jpg") center center/cover no-repeat;
 
 }
 
@@ -157,7 +157,7 @@ nav a:hover{
 
     border:none;
 
-    color:white;
+    color:beige;
 
     font-size:2rem;
 
