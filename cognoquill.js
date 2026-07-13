@@ -31,61 +31,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ===================================================
-// SUBMISSION MODAL POPUP LOGIC
-// ===================================================
-document.addEventListener("click", function(event) {
-    const modal = document.getElementById("submitModal");
-    if (!modal) return; 
 
-    // Opens the modal when clicking the card box, the "+" icon, or the text
-    if (event.target.closest(".submit-card")) {
-        modal.style.display = "flex";
-    }
-
-    // Close on 'x' click
-    if (event.target.closest(".close")) {
-        modal.style.display = "none";
-    }
-
-    // Close when clicking empty space outside the modal box
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
-// ===================================================
-// SUBMISSION FORM HANDLING (MATCHES YOUR ORIGINAL HTML)
-// ===================================================
-const submissionForm = document.getElementById("submissionForm");
-
-if (submissionForm) {
-    submissionForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        // Safely grabs values using your exact placeholders
-        const titleInput = submissionForm.querySelector('input[placeholder="Title"]');
-        const authorInput = submissionForm.querySelector('input[placeholder="Your Name"]');
-        const cardsContainer = document.querySelector(".cards");
-
-        if (titleInput && authorInput && cardsContainer) {
-            const newCard = document.createElement("div");
-            newCard.className = "work-card";
-            newCard.innerHTML = `
-                <img src="placeholder.jpg" alt="Poem">
-                <div class="work-content">
-                    <h3>${titleInput.value}</h3>
-                    <p>by ${authorInput.value}</p>
-                </div>
-            `;
-            cardsContainer.appendChild(newCard);
-        }
-
-        // Reset fields and hide modal
-        submissionForm.reset();
-        document.getElementById("submitModal").style.display = "none";
-    });
-}
 
 // ===================================================
 // POETRY PAGE — DYNAMIC CAROUSEL
